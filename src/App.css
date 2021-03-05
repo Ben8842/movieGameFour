@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: black;
   color: white;
+  text-align: center;
+  font-size: 40px;
+  align-items: center;
+  margin: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+#scoreSection {
+  font-size: 25px;
+  font: Impact, fantasy;
+  font-family: Impact, fantasy;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#scoreValue {
+  font-size: 40px;
+  font: Impact, fantasy;
+  font-family: Impact, fantasy;
+  font-weight: 200px;
+  color: lightgreen;
+}
+
+#titleSection {
+  font-size: 40px;
+  font-family: Impact, fantasy;
+}
+
+#instructionSection {
+  font-size: 16px;
+  font-family: Impact, fantasy;
+}
+
+.imgmaxi {
+  height: 200px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  vertical-align: top;
+}
+
+.imgmax {
+  height: 190px;
+  width: 140px;
+}
+
+.imgactor {
+  height: 85px;
+  width: 65px;
+}
+
+.imgchain {
+  height: 100px;
+  width: 75px;
+  color: white;
+  background-color: black;
+  vertical-align: top;
+  font-size: 12px;
+  border: none;
+}
+
+.imgchainM {
+  height: 110px;
+  width: 80px;
+  background-color: black;
+}
+
+.imgchainA {
+  height: 70px;
+  width: 60px;
+  background-color: black;
+  color: white;
+  vertical-align: top;
+  border: none;
+  font-size: 12px;
+}
+
+.imgchainMA {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+#playbutton {
+  height: 200px;
+  width: 500px;
+  font-size: 50px;
+  color: yellow;
+  background-color: grey;
+  border-radius: 250px;
+  padding: 30px;
+  margin: 45px;
+  border-width: 20px;
+  border-color: yellow;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    align-items: center;
+    margin: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .imgmaxi {
+    height: 100px;
+    width: 75px;
+    background-color: black;
+    border: none;
+  }
+
+  .imgmax {
+    height: 100%;
+    width: 100%;
+  }
+
+  .imgactor {
+    height: 80px;
+    width: 60px;
+  }
+
+  .imgchain {
+    height: 70px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    vertical-align: top;
+    border: none;
+  }
+
+  .imgchainM {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+  }
+
+  .imgchainA {
+    height: 70px;
+    width: 60px;
+    background-color: black;
+    color: white;
+    vertical-align: top;
+    border: none;
+    font-size: 12px;
+  }
+
+  .imgchainMA {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+  }
+
+  #playbutton {
+    height: 75px;
+    width: 100px;
+    font-size: 18px;
+    color: yellow;
+    background-color: grey;
+    border-radius: 250px;
+    padding: 5px;
+    margin: 45px;
+    border-width: 10px;
+    border-color: yellow;
   }
 }

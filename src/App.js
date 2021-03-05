@@ -197,6 +197,231 @@ class App extends Component {
           id: 45317,
           poster_path: "/jcQYWWi2y1vNsGlJJ2jNcFq0y1n.jpg",
         },
+        {
+          title: "Mrs. Doubtfire",
+          id: 788,
+          poster_path: "/szvidvi0Fo4j2gmMtk1sNe1rkzw.jpg",
+        },
+        {
+          title: "Home Alone",
+          id: 771,
+          poster_path: "/9wSbe4CwObACCQvaUVhWQyLR5Vz.jpg",
+        },
+        {
+          title: "Jerry Maguire",
+          id: 45317,
+          poster_path: "/2FJFChUeEgYpCvsLfAMXjcFtFOy.jpg",
+        },
+        {
+          title: "Swingers",
+          id: 10218,
+          poster_path: "/vpyu6e2ht70uDh1k8k9mqB1Tj0L.jpg",
+        },
+        {
+          title: "Batman Returns",
+          id: 364,
+          poster_path: "/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg",
+        },
+        {
+          title: "Beetlejuice",
+          id: 4011,
+          poster_path: "/nnl6OWkyPpuMm595hmAxNW3rZFn.jpg",
+        },
+        {
+          title: "Evita",
+          id: 8818,
+          poster_path: "/q2uuRK9nq2fk9Azw60jtmuGFRyi.jpg",
+        },
+        {
+          title: "The Notebook",
+          id: 11036,
+          poster_path: "/rNzQyW4f8B8cQeg7Dgj3n6eT5k9.jpg",
+        },
+        {
+          title: "Jurassic Park",
+          id: 329,
+          poster_path: "/9i3plLl89DHMz7mahksDaAo7HIS.jpg",
+        },
+        {
+          title: "Die Hard",
+          id: 562,
+          poster_path: "/1fq1IpnuVqkD5BMuaXAUW0eVB21.jpg",
+        },
+        {
+          title: "Primal Fear",
+          id: 1592,
+          poster_path: "/qJf2TzE8nRTFbFMPJNW6c8mI0KU.jpg",
+        },
+        {
+          title: "Chicago",
+          id: 1574,
+          poster_path: "/v1Sg3GuHDz9uhrKqYozOeCMLSpj.jpg",
+        },
+        {
+          title: "Election",
+          id: 9451,
+          poster_path: "/5gPOFU6IPvDrx50XaPCK4twNw79.jpg",
+        },
+        {
+          title: "Ferris Bueller's Day Off",
+          id: 9377,
+          poster_path: "/kKhvDqvxaXSJXWjVKjCTeHvNKd3.jpg",
+        },
+        {
+          title: "The Breakfast Club",
+          id: 2108,
+          poster_path: "/c0bdxKVRevkw50LOnk6B8d3e4s.jpg",
+        },
+        {
+          title: "Happy Gilmore",
+          id: 9614,
+          poster_path: "/4RnCeRzvI1xk5tuNWjpDKzSnJDk.jpg",
+        },
+        {
+          title: "Edward Scissorhands",
+          id: 162,
+          poster_path: "/1RFIbuW9Z3eN9Oxw2KaQG5DfLmD.jpg",
+        },
+        {
+          title: "Field of Dreams",
+          id: 2323,
+          poster_path: "/8PT4sAcneQ7MtZ1Mqoe2EyOJHmZ.jpg",
+        },
+        {
+          title: "Speed",
+          id: 1637,
+          poster_path: "/o1Zs7VaS9y2GYH9CLeWxaVLWd3x.jpg",
+        },
+        {
+          title: "The Fifth Element",
+          id: 18,
+          poster_path: "/fPtlCO1yQtnoLHOwKtWz7db6RGU.jpg",
+        },
+        {
+          title: "Hoosiers",
+          id: 5693,
+          poster_path: "/dHpjZQXEdoi1xNLubM1rPmTHJYz.jpg",
+        },
+        {
+          title: "School of Rock",
+          id: 1584,
+          poster_path: "/zXLXaepIBvFVLU25DH3wv4IPSbe.jpg",
+        },
+        {
+          title: "The Rocky Horror Picture Show",
+          id: 36685,
+          poster_path: "/3pyE6ZqDbuJi7zrNzzQzcKTWdmN.jpg",
+        },
+        {
+          title: "Sleepless in Seattle",
+          id: 858,
+          poster_path: "/iLWsLVrfkFvOXOG9PbUAYg7AK3E.jpg",
+        },
+        {
+          title: "You've Got Mail",
+          id: 9489,
+          poster_path: "/e2uVtH6TpMfUl7WeOM70ezkcjsU.jpg",
+        },
+        {
+          title: "Godspell",
+          id: 43158,
+          poster_path: "/unKvBw7y0L6BTWVALEebif9BtsZ.jpg",
+        },
+        {
+          title: "Superbad",
+          id: 8363,
+          poster_path: "/ek8e8txUyUwd2BNqj6lFEerJfbq.jpg",
+        },
+        {
+          title: "Contagion",
+          id: 39538,
+          poster_path: "/qL0IooP0bjXy0KXl9KEyPo22ll0.jpg",
+        },
+        {
+          title: "Meet the Parents",
+          id: 1597,
+          poster_path: "/jX9D6uVaYFZIwFMfD3pEPp4Lu6u.jpg",
+        },
+        {
+          title: "The Mask",
+          id: 854,
+          poster_path: "/zJUvFtaGPQkcQYE8nmhU66ESpWe.jpg",
+        },
+        {
+          title: "Titanic",
+          id: 597,
+          poster_path: "/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+        },
+        {
+          title: "Twister",
+          id: 664,
+          poster_path: "/ba6Bg9mxphS24tpSe98vZccEe3S.jpg",
+        },
+        {
+          title: "A Clockwork Orange",
+          id: 185,
+          poster_path: "/4sHeTAp65WrSSuc05nRBKddhBxO.jpg",
+        },
+        {
+          title: "Sneakers",
+          id: 2322,
+          poster_path: "/pY7wNO4J0QMAH9Q4nJL3QLlPVvC.jpg",
+        },
+        {
+          title: "A Clockwork Orange",
+          id: 185,
+          poster_path: "/4sHeTAp65WrSSuc05nRBKddhBxO.jpg",
+        },
+        {
+          title: "E.T. the Extra-Terrestrial",
+          id: 601,
+          poster_path: "/trEGc4UQWj8eLS5MyeGRxeTwlqY.jpg",
+        },
+        {
+          title: "300",
+          id: 1271,
+          poster_path: "/lGv19gokQvgC7jgjWqapIachnxU.jpg",
+        },
+        {
+          title: "Gladiator",
+          id: 98,
+          poster_path: "/ehGpN04mLJIrSnxcZBMvHeG0eDc.jpg",
+        },
+        {
+          title: "A Beautiful Mind",
+          id: 453,
+          poster_path: "/zwzWCmH72OSC9NA0ipoqw5Zjya8.jpg",
+        },
+        {
+          title: "The Prestige",
+          id: 1124,
+          poster_path: "/Ag2B2KHKQPukjH7WutmgnnSNurZ.jpg",
+        },
+        {
+          title: "Zombieland",
+          id: 19908,
+          poster_path: "/dUkAmAyPVqubSBNRjRqCgHggZcK.jpg",
+        },
+        {
+          title: "Kingpin",
+          id: 11543,
+          poster_path: "/o3yoL3dcPzAE2QpwG7iJlvEeiG7.jpg",
+        },
+        {
+          title: "Pulp Fiction",
+          id: 680,
+          poster_path: "/plnlrtBUULT0rh3Xsjmpubiso3L.jpg",
+        },
+        {
+          title: "Grease",
+          id: 621,
+          poster_path: "/9L4p8N1nQmAdAAfiaWlLuYs7dZt.jpg",
+        },
+        {
+          title: "Top Gun",
+          id: 744,
+          poster_path: "/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
+        },
       ],
       shuffledChallenge: [],
       movieChallengeOne: {},
@@ -329,6 +554,7 @@ class App extends Component {
       startChallengeCount: 10,
     });
   }
+
   incrementSuperSteps() {
     this.setState({
       superSteps: this.state.superSteps + 1,
@@ -425,6 +651,7 @@ class App extends Component {
       });
   }
 
+  //This was only used when search bar present
   handleChangeQ(event) {
     this.setState({
       [event.target.name]: event.target.value,
@@ -514,7 +741,7 @@ class App extends Component {
 
     const stepZero = (
       <div id="instructionSection">
-        Your beginning movie is {movieChallengeOne.title}
+        Your beginning movie is: {movieChallengeOne.title}
         <div>
           <button id="playbutton" onClick={() => this.incrementSpecial()}>
             Play!
@@ -640,7 +867,7 @@ class App extends Component {
 
     const goalLocation = (
       <div id="scoreSection">
-        Your goal is to reach the movie {movieChallengeTwo.title}
+        Your goal is to reach the movie: {movieChallengeTwo.title}
       </div>
     );
 

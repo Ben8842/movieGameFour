@@ -13,7 +13,7 @@ class PosterButton extends Component {
     } = this.props;
     var imgurl =
       "https://image.tmdb.org/t/p/original/" + this.props.poster_path;
-    console.log(poster_path);
+
     return (
       <span key={index}>
         <button

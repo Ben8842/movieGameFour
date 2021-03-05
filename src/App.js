@@ -126,6 +126,7 @@ class App extends Component {
     this.actorChoicesOne = this.actorChoicesOne.bind(this);
     this.movieChoicesOne = this.movieChoicesOne.bind(this);
   }
+
   randomChallenge() {
     let unshuffled = this.state.challengeMovies;
     let shuffled = unshuffled
@@ -139,6 +140,28 @@ class App extends Component {
       movieChallengeTwo: shuffled[1],
     });
   }
+
+  winChecker() {
+    var x;
+
+    console.log("helo?");
+
+    if (
+      this.state.movieChain[this.state.movieChain.length - 1][0] ==
+      this.state.movieChallengeTwo.title
+    ) {
+      this.setState({ winnerFlag: true });
+      console.log("you win!");
+      console.log(this.state.movieChain);
+      console.log(this.state.movieChallengeTwo.title);
+    }
+
+    //   console.log("you win!");
+    //  console.log(this.state.movieChain);
+    // console.log(this.state.movieChallengeTwo[0][0]);
+    console.log(this.state.movieChallengeTwo.title);
+  }
+
   componentDidMount() {
     this.randomChallenge();
   }
@@ -162,16 +185,17 @@ class App extends Component {
     this.setState({
       movieChoiceArray: [[x, y, z]],
       superPoints: 1000,
-      movieChain: [[[x, y, z]]],
+      movieChain: [[x, y, z]],
       superSteps: 4,
       instructionFlag: false,
-      startChallengeCount: 0,
+      startChallengeCount: -50,
     });
     this.getCastTwo(y);
   }
 
   movieChoicesOne(x, y, z) {
     var { superSteps } = this.state;
+    this.winChecker();
     if (superSteps == 1) {
       //  console.log("I PROMISE THAT I WENT THIS WAY");
       this.setState({
@@ -303,6 +327,7 @@ class App extends Component {
       startChallengeCount,
       movieChallengeOne,
       movieChallengeTwo,
+      winnerFlag,
     } = this.state;
     console.log(movieChain);
 
@@ -440,7 +465,7 @@ class App extends Component {
     const stepFour = (
       <div>
         <div>
-          Choose an actor from the last movie you chose: &nbsp;
+          Choose an actor from the movie: &nbsp;
           {movieChain.length - 1 >= 0
             ? movieChain[movieChain.length - 1][0]
             : null}
@@ -538,7 +563,12 @@ class App extends Component {
           : null}
       </div>
     );
-    console.log(startChallengeCount);
+
+    const celebration = (
+      <div>
+        <div>WOW YOU WON THE GAME ! ! !</div>
+      </div>
+    );
 
     return (
       <div>
@@ -547,7 +577,8 @@ class App extends Component {
           : startChallengeCount == 9
           ? beginChallenge
           : null}
-        {startChallengeCount == 10 ? displayChallenge : null}
+        {startChallengeCount == 10 && !winnerFlag ? displayChallenge : null}
+        {winnerFlag ? celebration : null}
       </div>
     );
   }

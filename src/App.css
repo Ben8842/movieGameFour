@@ -9,26 +9,21 @@ body {
 
 #scoreSection {
   font-size: 25px;
-  font: Impact, fantasy;
-  font-family: Impact, fantasy;
 }
 
 #scoreValue {
   font-size: 40px;
-  font: Impact, fantasy;
-  font-family: Impact, fantasy;
+
   font-weight: 200px;
   color: lightgreen;
 }
 
 #titleSection {
   font-size: 40px;
-  font-family: Impact, fantasy;
 }
 
 #instructionSection {
   font-size: 16px;
-  font-family: Impact, fantasy;
 }
 
 .imgmaxi {

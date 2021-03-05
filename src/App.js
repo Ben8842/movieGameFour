@@ -67,9 +67,9 @@ class App extends Component {
           poster_path: "/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
         },
         {
-          title: "Spider-Man: Homecoming",
-          id: 315635,
-          poster_path: "/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg",
+          title: "Breakfast at Tiffany's",
+          id: 164,
+          poster_path: "/h3GDLoBUTiVFm4UMrok5tibFwqC.jpg",
         },
         {
           title: "Thor",
@@ -77,9 +77,9 @@ class App extends Component {
           poster_path: "/prSfAi1xGrhLQNxVSUFh61xQ4Qy.jpg",
         },
         {
-          title: "Captain America: The First Avenger",
-          id: 1771,
-          poster_path: "/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
+          title: "The Shawshank Redemption",
+          id: 278,
+          poster_path: "/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
         },
         {
           title: "Black Panther",
@@ -101,11 +101,7 @@ class App extends Component {
           id: 1578,
           poster_path: "/rEviyDWNbAFmvvCPlkMRPAGUElG.jpg",
         },
-        {
-          title: "Footloose",
-          id: 68817,
-          poster_path: "/rzTuPCtIBuL4LPJBbNA5RnXDzPZ.jpg",
-        },
+
         {
           title: "Casablanca",
           id: 289,
@@ -116,15 +112,168 @@ class App extends Component {
           id: 7326,
           poster_path: "/jNIn2tVhpvFD6P9IojldI3mNYcn.jpg",
         },
+        {
+          title: "Pulp Fiction",
+          id: 680,
+          poster_path: "/plnlrtBUULT0rh3Xsjmpubiso3L.jpg",
+        },
+        {
+          title: "Taxi Driver",
+          id: 103,
+          poster_path: "/ekstpH614fwDX8DUln1a2Opz0N8.jpg",
+        },
+        {
+          title: "Inception",
+          id: 27205,
+          poster_path: "/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+        },
+        {
+          title: "Good Fellas",
+          id: 626867,
+          poster_path: "/pMRHkjDbnpMVu5OQQNFMaU7rWbm.jpg",
+        },
+        {
+          title: "The Silence of the Lambs",
+          id: 274,
+          poster_path: "/rplLJ2hPcOQmkFhTqUte0MkEaO2.jpg",
+        },
+        {
+          title: "Scream",
+          id: 4232,
+          poster_path: "/aXAByjBN8UhaYvotqRCwa5MsMGu.jpg",
+        },
+        {
+          title: "Footloose",
+          id: 1788,
+          poster_path: "/w3RAC5tavbKKjzhLhFNbgprHpAV.jpg",
+        },
+        {
+          title: "Forrest Gump",
+          id: 13,
+          poster_path: "/h5J4W4veyxMXDMjeNxZI46TsHOb.jpg",
+        },
+        {
+          title: "One Flew Over the Cuckoo's Nest",
+          id: 510,
+          poster_path: "/3jcbDmRFiQ83drXNOvRDeKHxS0C.jpg",
+        },
+        {
+          title: "Jaws",
+          id: 578,
+          poster_path: "/s2xcqSFfT6F7ZXHxowjxfG0yisT.jpg",
+        },
+        {
+          title: "One Flew Over the Cuckoo's Nest",
+          id: 510,
+          poster_path: "/3jcbDmRFiQ83drXNOvRDeKHxS0C.jpg",
+        },
+        {
+          title: "Rocky",
+          id: 1366,
+          poster_path: "/i5xiwdSsrecBvO7mIfAJixeEDSg.jpg",
+        },
+        {
+          title: "Alien",
+          id: 348,
+          poster_path: "/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
+        },
+        {
+          title: "Star Wars",
+          id: 11,
+          poster_path: "/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+        },
+        {
+          title: "The Sound of Music",
+          id: 15121,
+          poster_path: "/nv8bcyqXJh2tijWLa3MoUktlVZZ.jpg",
+        },
+        {
+          title: "West Side Story",
+          id: 1725,
+          poster_path: "/vCtErvzF6S93DtoD7URwy9Mr7oe.jpg",
+        },
+        {
+          title: "The Fighter",
+          id: 45317,
+          poster_path: "/jcQYWWi2y1vNsGlJJ2jNcFq0y1n.jpg",
+        },
       ],
       shuffledChallenge: [],
       movieChallengeOne: {},
       movieChallengeTwo: {},
+      gifCelebration: [
+        <span>
+          <iframe
+            src="https://giphy.com/embed/axu6dFuca4HKM"
+            width="480"
+            height="228"
+            frameBorder="0"
+            class="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </span>,
+        <span>
+          <iframe
+            src="https://giphy.com/embed/hZj44bR9FVI3K"
+            width="396"
+            height="480"
+            frameBorder="0"
+            class="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </span>,
+        <span>
+          <iframe
+            src="https://giphy.com/embed/56pSvQ2JFeGT6"
+            width="480"
+            height="240"
+            frameBorder="0"
+            class="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </span>,
+        <span>
+          <iframe
+            src="https://giphy.com/embed/Ge86XF8AVY1KE"
+            width="480"
+            height="300"
+            frameBorder="0"
+            class="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </span>,
+        <span>
+          <iframe
+            src="https://giphy.com/embed/KZRhNKr7whmAcG1Jly"
+            width="480"
+            height="480"
+            frameBorder="0"
+            class="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </span>,
+        <span>
+          <iframe
+            src="https://giphy.com/embed/3oEduYTT51xu5mQDCg"
+            width="480"
+            height="480"
+            frameBorder="0"
+            class="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </span>,
+      ],
+
+      randomCelebration: [],
     };
 
     this.handleChangeQ = this.handleChangeQ.bind(this);
     this.actorChoicesOne = this.actorChoicesOne.bind(this);
     this.movieChoicesOne = this.movieChoicesOne.bind(this);
+  }
+
+  calculateNewGoal() {
+    this.randomChallenge();
   }
 
   randomChallenge() {
@@ -138,6 +287,18 @@ class App extends Component {
       shuffledChallenge: shuffled,
       movieChallengeOne: shuffled[0],
       movieChallengeTwo: shuffled[1],
+    });
+  }
+
+  randomGiffy() {
+    let unshuffled = this.state.gifCelebration;
+    let shuffled = unshuffled
+      .map((a) => ({ sort: Math.random(), value: a }))
+      .sort((a, b) => a.sort - b.sort)
+      .map((a) => a.value);
+    console.log(shuffled);
+    this.setState({
+      randomCelebration: shuffled,
     });
   }
 
@@ -160,6 +321,7 @@ class App extends Component {
 
   componentDidMount() {
     this.randomChallenge();
+    this.randomGiffy();
   }
 
   incrementSpecial() {
@@ -352,13 +514,16 @@ class App extends Component {
 
     const stepZero = (
       <div id="instructionSection">
-        Welcome. You have zero points so far. Please click the 'Play' button.
+        Your beginning movie is {movieChallengeOne.title}
         <div>
+          <button id="playbutton" onClick={() => this.incrementSpecial()}>
+            Play!
+          </button>
           <button id="playbutton" onClick={() => this.incrementSuperSteps()}>
             Practice!
           </button>
-          <button id="playbutton" onClick={() => this.incrementSpecial()}>
-            Play!
+          <button id="playbutton" onClick={() => this.calculateNewGoal()}>
+            New Mission
           </button>
         </div>
       </div>
@@ -473,26 +638,27 @@ class App extends Component {
       </div>
     );
 
-    const pointsLocation = (
+    const goalLocation = (
       <div id="scoreSection">
-        You have <span id="scoreValue">{superPoints}</span> Points.
+        Your goal is to reach the movie {movieChallengeTwo.title}
       </div>
     );
 
     const beginChallenge = (
-      <div>
+      <div class="instruction">
         Enough training! You are ready for the challenge of your destiny!
         <div>
           <button id="playbutton" onClick={() => this.incrementSuperSteps()}>
             Play!
           </button>
+          {this.state.randomCelebration[0]}
         </div>
       </div>
     );
 
     const displayChallenge = (
       <div>
-        <div>
+        <div class="instruction">
           We have randomly chosen two movies for you.{" "}
           <div>
             Your CHALLENGE is to link the movies together using your training
@@ -538,13 +704,16 @@ class App extends Component {
         >
           Begin!
         </button>
+        <button id="playbutton" onClick={() => this.calculateNewGoal()}>
+          New Mission
+        </button>
       </div>
     );
 
     const training = (
       <div>
         <div id="titleSection">Movie Chain Game</div>
-        {pointsLocation}
+        {movieChallengeOne.title !== undefined ? goalLocation : null}
         {movieChainz}
         {superSteps == 3 && instructionFlag ? additionalInstruction : null}
         {superSteps == 0
@@ -563,7 +732,12 @@ class App extends Component {
 
     const celebration = (
       <div>
-        <div>WOW YOU WON THE GAME ! ! !</div>
+        <div class="instruction" class>
+          <h1>WOW YOU WON THE GAME ! ! !</h1>
+        </div>
+        {this.state.randomCelebration[1]}
+        <h2>Look at your beautiful movie chain</h2>
+        <div>{posters}</div>
       </div>
     );
 
@@ -577,7 +751,6 @@ class App extends Component {
           ? celebration
           : null}
         {startChallengeCount == 10 && !winnerFlag ? displayChallenge : null}
-        {winnerFlag ? celebration : null}
       </div>
     );
   }

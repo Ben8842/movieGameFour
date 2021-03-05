@@ -160,8 +160,12 @@ body {
     background-color: grey;
     border-radius: 250px;
     padding: 5px;
-    margin: 45px;
+    margin: 25px;
     border-width: 10px;
     border-color: yellow;
+  }
+
+  .instruction {
+    margin-top: 40px;
   }
 }

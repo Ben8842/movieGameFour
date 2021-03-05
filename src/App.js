@@ -326,7 +326,7 @@ class App extends Component {
 
   incrementSpecial() {
     this.setState({
-      startChallengeCount: 9,
+      startChallengeCount: 10,
     });
   }
   incrementSuperSteps() {
@@ -734,10 +734,10 @@ class App extends Component {
       <div>
         <div class="instruction" class>
           <h1>WOW YOU WON THE GAME ! ! !</h1>
+          <h2>Look at your beautiful movie chain</h2>
+          <div>{posters}</div>
         </div>
         {this.state.randomCelebration[1]}
-        <h2>Look at your beautiful movie chain</h2>
-        <div>{posters}</div>
       </div>
     );
 

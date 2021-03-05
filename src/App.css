@@ -77,15 +77,15 @@ body {
 }
 
 #playbutton {
-  height: 200px;
-  width: 500px;
-  font-size: 50px;
+  height: 140px;
+  width: 350px;
+  font-size: 30px;
   color: yellow;
   background-color: grey;
   border-radius: 250px;
   padding: 30px;
   margin: 45px;
-  border-width: 20px;
+  border-width: 14px;
   border-color: yellow;
 }
 

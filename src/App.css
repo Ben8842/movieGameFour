@@ -89,6 +89,20 @@ body {
   border-color: yellow;
 }
 
+#playbutton:focus {
+  outline: none;
+  height: 140px;
+  width: 350px;
+  font-size: 30px;
+  color: yellow;
+  background-color: grey;
+  border-radius: 250px;
+  padding: 30px;
+  margin: 45px;
+  border-width: 14px;
+  border-color: yellow;
+}
+
 @media only screen and (max-width: 800px) {
   body {
     background-color: black;
@@ -157,6 +171,20 @@ body {
     padding: 5px;
     margin: 25px;
     border-width: 10px;
+    border-color: yellow;
+  }
+
+  #playbutton:focus {
+    outline: none;
+    height: 140px;
+    width: 350px;
+    font-size: 30px;
+    color: yellow;
+    background-color: grey;
+    border-radius: 250px;
+    padding: 30px;
+    margin: 45px;
+    border-width: 14px;
     border-color: yellow;
   }
 

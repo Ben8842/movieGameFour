@@ -141,15 +141,11 @@ class App extends Component {
     });
   }
 
-  winChecker() {
-    var x;
-
+  winChecker(x) {
     console.log("helo?");
-
-    if (
-      this.state.movieChain[this.state.movieChain.length - 1][0] ==
-      this.state.movieChallengeTwo.title
-    ) {
+    console.log(x);
+    console.log(this.state.movieChallengeTwo.title);
+    if (x === this.state.movieChallengeTwo.title) {
       this.setState({ winnerFlag: true });
       console.log("you win!");
       console.log(this.state.movieChain);
@@ -195,7 +191,7 @@ class App extends Component {
 
   movieChoicesOne(x, y, z) {
     var { superSteps } = this.state;
-    this.winChecker();
+    // this.winChecker();
     if (superSteps == 1) {
       //  console.log("I PROMISE THAT I WENT THIS WAY");
       this.setState({
@@ -217,6 +213,7 @@ class App extends Component {
         startChallengeCount: this.state.startChallengeCount + 1,
       });
       this.getCastTwo(y);
+      this.winChecker(x);
     }
   }
 
@@ -511,8 +508,8 @@ class App extends Component {
             id={movieChallengeOne.id}
             onClickChoice={null}
             index={null}
-            button_class="imgchainA"
-            poster_class="imgchainMA"
+            button_class="imgmaxi"
+            poster_class="imgmax"
           />
           <p>
             {" "}
@@ -525,8 +522,8 @@ class App extends Component {
             id={movieChallengeTwo.id}
             onClickChoice={null}
             index={null}
-            button_class="imgchainA"
-            poster_class="imgchainMA"
+            button_class="imgmaxi"
+            poster_class="imgmax"
           />
         </div>
         <button
@@ -572,10 +569,12 @@ class App extends Component {
 
     return (
       <div>
-        {startChallengeCount < 9
+        {startChallengeCount < 9 && !winnerFlag
           ? training
-          : startChallengeCount == 9
+          : startChallengeCount == 9 && !winnerFlag
           ? beginChallenge
+          : winnerFlag
+          ? celebration
           : null}
         {startChallengeCount == 10 && !winnerFlag ? displayChallenge : null}
         {winnerFlag ? celebration : null}

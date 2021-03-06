@@ -488,7 +488,7 @@ class App extends Component {
           ></iframe>
         </span>,
       ],
-
+      queryGiphy: [{ bitly_gif_url: null }, { bitly_gif_url: null }],
       randomCelebration: [],
     };
 
@@ -497,8 +497,26 @@ class App extends Component {
     this.movieChoicesOne = this.movieChoicesOne.bind(this);
   }
 
+  giphyQuery(id) {
+    fetch(
+      "https://api.giphy.com/v1/gifs/search?api_key=mx6JiB0rvv41thD4wEyHCmq0nlM0HsUl&q=" +
+        id +
+        "&limit=25&offset=0&rating=g&lang=en"
+    )
+      .then((res) => res.json())
+      .then((json) => {
+        console.log("YOYO" + json);
+        console.log(json);
+        this.setState({
+          queryGiphy: json.data,
+        });
+      });
+  }
+
   calculateNewGoal() {
     this.randomChallenge();
+    this.giphyQuery(this.state.movieChallengeTwo.title);
+    //this.setState({ winnerFlag: true });
   }
 
   randomChallenge() {
@@ -533,6 +551,7 @@ class App extends Component {
     console.log(this.state.movieChallengeTwo.title);
     if (x === this.state.movieChallengeTwo.title) {
       this.setState({ winnerFlag: true });
+      this.giphyQuery(this.state.movieChallengeTwo.title);
       console.log("you win!");
       console.log(this.state.movieChain);
       console.log(this.state.movieChallengeTwo.title);
@@ -714,6 +733,7 @@ class App extends Component {
       movieChallengeOne,
       movieChallengeTwo,
       winnerFlag,
+      queryGiphy,
     } = this.state;
     console.log(movieChain);
 
@@ -878,6 +898,7 @@ class App extends Component {
           <button id="playbutton" onClick={() => this.incrementSuperSteps()}>
             Play!
           </button>
+
           {this.state.randomCelebration[0]}
         </div>
       </div>
@@ -964,10 +985,18 @@ class App extends Component {
           <h2>Look at your beautiful movie chain</h2>
           <div>{posters}</div>
         </div>
-        {this.state.randomCelebration[1]}
+
+        <iframe
+          src={queryGiphy[0].embed_url}
+          width="auto"
+          height="auto"
+          frameBorder="0"
+          class="giphy-embed"
+          allowFullScreen
+        ></iframe>
       </div>
     );
-
+    // {this.state.randomCelebration[1]}
     return (
       <div>
         {startChallengeCount < 9 && !winnerFlag

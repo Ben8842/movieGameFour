@@ -48,15 +48,11 @@ class App extends Component {
       ],
       introData3: [],
       movieChoiceArray: [],
-      actorChoiceArray: [],
-      castArray: [],
       loserFlag: false,
       winnerFlag: false,
       commonContainer: [],
       commonContainerImg: [],
       movieDataQuery: [],
-      movieNameQ: "",
-      commonContainerID: [],
       actorQuery: [],
       tempCast: [],
       movieChain: [],
@@ -686,7 +682,6 @@ class App extends Component {
 
   incrementChallenge(x, y, z) {
     this.setState({
-      movieChoiceArray: [[x, y, z]],
       superPoints: 1000,
       movieChain: [[x, y, z]],
       superSteps: 4,
@@ -702,7 +697,6 @@ class App extends Component {
     if (superSteps == 1) {
       //  console.log("I PROMISE THAT I WENT THIS WAY");
       this.setState({
-        movieChoiceArray: [...this.state.movieChoiceArray, ...[[x, y, z]]],
         superSteps: 2,
         superPoints: this.state.superPoints + 20,
         movieChain: [...this.state.movieChain, ...[[x, y, z]]],
@@ -712,7 +706,6 @@ class App extends Component {
       this.getCastOne(y);
     } else {
       this.setState({
-        movieChoiceArray: [...this.state.movieChoiceArray, ...[[x, y, z]]],
         superPoints: this.state.superPoints + 25,
         movieChain: [...this.state.movieChain, ...[[x, y, z]]],
         superSteps: 4,
@@ -758,7 +751,6 @@ class App extends Component {
         if (this.state.superSteps == 4) {
           this.setState({
             actorQuery: json.cast,
-            actorChoiceArray: [...this.state.actorChoiceArray, ...[[x, y, z]]],
             movieChain: [...this.state.movieChain, ...[[x, y, z]]],
             superPoints: this.state.superPoints + 35,
             superSteps: this.state.superSteps - 1,
@@ -767,7 +759,6 @@ class App extends Component {
         } else
           this.setState({
             actorQuery: json.cast,
-            actorChoiceArray: [...this.state.actorChoiceArray, ...[[x, y, z]]],
             movieChain: [...this.state.movieChain, ...[[x, y, z]]],
             superPoints: this.state.superPoints + 35,
             superSteps: this.state.superSteps + 1,
@@ -785,15 +776,10 @@ class App extends Component {
       introDataB,
       introData2,
       introData3,
-      movieChoiceArray,
       commonContainer,
       commonContainerImg,
       movieDataQuery,
-      movieNameQ,
-      actorChoiceArray,
-      commonContainerID,
       actorQuery,
-      castArray,
       tempCast,
       movieChain,
       instructionFlag,

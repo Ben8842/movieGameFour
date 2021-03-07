@@ -1040,8 +1040,8 @@ class App extends Component {
         <div>{posters}</div>
         <div>
           <iframe
-            src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.moviegame.fun%2F&layout=button&size=large&appId=250140228367248&width=77&height=28"
-            width="77"
+            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.moviegame.fun%2Fdocs%2Fplugins%2F&layout=button_count&size=large&appId=250140228367248&width=110&height=28"
+            width="110"
             height="28"
             scrolling="no"
             frameborder="0"

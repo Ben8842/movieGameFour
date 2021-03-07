@@ -90,8 +90,9 @@ body {
   border-radius: 250px;
   padding: 30px;
   margin: 45px;
-  border-width: 14px;
+  border-width: 8px;
   border-color: yellow;
+  border: solid;
 }
 
 #playbutton:focus {
@@ -106,6 +107,7 @@ body {
   margin: 45px;
   border-width: 14px;
   border-color: yellow;
+  border: solid;
 }
 
 @media only screen and (max-width: 800px) {
@@ -177,6 +179,7 @@ body {
     margin: 25px;
     border-width: 10px;
     border-color: yellow;
+    border: solid;
   }
 
   #playbutton:focus {
@@ -191,6 +194,7 @@ body {
     margin: 25px;
     border-width: 10px;
     border-color: yellow;
+    border: solid;
   }
 
   #padder {

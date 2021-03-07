@@ -605,8 +605,8 @@ class App extends Component {
     )
       .then((res) => res.json())
       .then((json) => {
-        console.log("YOYO" + json);
-        console.log(json);
+        //  console.log("YOYO" + json);
+        //  console.log(json);
         this.setState({
           queryGiphy: json.data,
         });
@@ -625,7 +625,7 @@ class App extends Component {
       .map((a) => ({ sort: Math.random(), value: a }))
       .sort((a, b) => a.sort - b.sort)
       .map((a) => a.value);
-    console.log(shuffled);
+    // console.log(shuffled);
     this.setState({
       shuffledChallenge: shuffled,
       movieChallengeOne: shuffled[0],
@@ -639,28 +639,28 @@ class App extends Component {
       .map((a) => ({ sort: Math.random(), value: a }))
       .sort((a, b) => a.sort - b.sort)
       .map((a) => a.value);
-    console.log(shuffled);
+    //  console.log(shuffled);
     this.setState({
       randomCelebration: shuffled,
     });
   }
 
   winChecker(x) {
-    console.log("helo?");
-    console.log(x);
-    console.log(this.state.movieChallengeTwo.title);
+    //  console.log("helo?");
+    //   console.log(x);
+    //   console.log(this.state.movieChallengeTwo.title);
     if (x === this.state.movieChallengeTwo.title) {
       this.setState({ winnerFlag: true });
       this.giphyQuery(this.state.movieChallengeTwo.title);
       console.log("you win!");
       console.log(this.state.movieChain);
-      console.log(this.state.movieChallengeTwo.title);
+      //    console.log(this.state.movieChallengeTwo.title);
     }
 
     //   console.log("you win!");
     //  console.log(this.state.movieChain);
     // console.log(this.state.movieChallengeTwo[0][0]);
-    console.log(this.state.movieChallengeTwo.title);
+    //   console.log(this.state.movieChallengeTwo.title);
   }
 
   componentDidMount() {
@@ -680,8 +680,8 @@ class App extends Component {
       superPoints: this.state.superPoints + 10,
       startChallengeCount: this.state.startChallengeCount + 1,
     });
-    console.log("stepping up");
-    console.log(this.state);
+    // console.log("stepping up");
+    // console.log(this.state);
   }
 
   incrementChallenge(x, y, z) {
@@ -691,9 +691,9 @@ class App extends Component {
       movieChain: [[x, y, z]],
       superSteps: 4,
       instructionFlag: false,
-      startChallengeCount: -50,
+      startChallengeCount: -75,
     });
-    this.getCastTwo(y);
+    this.getCastOne(y);
   }
 
   movieChoicesOne(x, y, z) {
@@ -719,7 +719,7 @@ class App extends Component {
         instructionFlag: false,
         startChallengeCount: this.state.startChallengeCount + 1,
       });
-      this.getCastTwo(y);
+      this.getCastOne(y);
       this.winChecker(x);
     }
   }
@@ -733,39 +733,7 @@ class App extends Component {
       .then((res) => res.json())
       .then((json) => {
         this.setState({
-          castArray: [...this.state.castArray, ...[json.cast]],
           tempCast: json.cast,
-        });
-      });
-  }
-
-  getCastTwo(id) {
-    fetch(
-      "https://api.themoviedb.org/3/movie/" +
-        id +
-        "/credits?api_key=365a7d6705a54bcd521d3101f7e74b44&language=en-US"
-    )
-      .then((res) => res.json())
-      .then((json) => {
-        this.setState({
-          castArray: [...this.state.castArray, ...[json.cast]],
-          tempCast: json.cast,
-        });
-      });
-  }
-
-  submitQuery(id) {
-    //var {  movieData } = this.state;
-    fetch(
-      "https://api.themoviedb.org/3/search/movie?api_key=365a7d6705a54bcd521d3101f7e74b44&query=" +
-        id
-    )
-      .then((res) => res.json())
-
-      .then((json) => {
-        console.log(json);
-        this.setState({
-          movieDataQuery: json.results,
         });
       });
   }
@@ -786,7 +754,7 @@ class App extends Component {
       .then((res) => res.json())
 
       .then((json) => {
-        console.log(json);
+        //   console.log(json);
         if (this.state.superSteps == 4) {
           this.setState({
             actorQuery: json.cast,
@@ -835,7 +803,7 @@ class App extends Component {
       winnerFlag,
       queryGiphy,
     } = this.state;
-    console.log(movieChain);
+    //  console.log(movieChain);
 
     var posters = movieChain.map((value, index) => (
       <Poster poster_path={value[2]} index={index} poster_name={value[0]} />
@@ -1125,3 +1093,35 @@ class App extends Component {
 }
 
 export default App;
+
+/*  function not used in this version
+  submitQuery(id) {
+    //var {  movieData } = this.state;
+    fetch(
+      "https://api.themoviedb.org/3/search/movie?api_key=365a7d6705a54bcd521d3101f7e74b44&query=" +
+        id
+    )
+      .then((res) => res.json())
+
+      .then((json) => {
+     //   console.log(json);
+        this.setState({
+          movieDataQuery: json.results,
+        });
+      });
+  }
+  */
+/* this function is not used in this version
+  getCastTwo(id) {
+    fetch(
+      "https://api.themoviedb.org/3/movie/" +
+        id +
+        "/credits?api_key=365a7d6705a54bcd521d3101f7e74b44&language=en-US"
+    )
+      .then((res) => res.json())
+      .then((json) => {
+        this.setState({
+          tempCast: json.cast,
+        });
+      });
+  }*/

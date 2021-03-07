@@ -418,9 +418,109 @@ class App extends Component {
           poster_path: "/9L4p8N1nQmAdAAfiaWlLuYs7dZt.jpg",
         },
         {
+          title: "The King's Speech",
+          id: 45269,
+          poster_path: "/uQ538BfYLDJh3GXlzRZLo0j7PFj.jpg",
+        },
+        {
           title: "Top Gun",
           id: 744,
           poster_path: "/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
+        },
+        {
+          title: "Alive",
+          id: 7305,
+          poster_path: "/uQACcCZqd7WCTRin9xRIW5gr1bd.jpg",
+        },
+        {
+          title: "Clue",
+          id: 7305,
+          poster_path: "/uQACcCZqd7WCTRin9xRIW5gr1bd.jpg",
+        },
+        {
+          title: "Punch-Drunk Love",
+          id: 8051,
+          poster_path: "/ni98pJPeHlfaxWQ3XUD0Bm4r9mb.jpg",
+        },
+        {
+          title: "eXistenZ",
+          id: 1946,
+          poster_path: "/kETKF0JhdTPn1knci8CAdYL0d79.jpg",
+        },
+        {
+          title: "Indiana Jones and the Temple of Doom",
+          id: 87,
+          poster_path: "/wu0m7HiZyZr4pOp8IpnFHNvGkVV.jpg",
+        },
+        {
+          title: "The Martian",
+          id: 286217,
+          poster_path: "/5BHuvQ6p9kfc091Z8RiFNhCwL4b.jpg",
+        },
+        {
+          title: "Guardians of the Galaxy",
+          id: 118340,
+          poster_path: "/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg",
+        },
+        {
+          title: "Mean Girls",
+          id: 10625,
+          poster_path: "/fXm3YKXAEjx7d2tIWDg9TfRZtsU.jpg",
+        },
+        {
+          title: "Clueless",
+          id: 9603,
+          poster_path: "/8AwVTcgpTnmeOs4TdTWqcFDXEsA.jpg",
+        },
+        {
+          title: "Gettysburg",
+          id: 10655,
+          poster_path: "/566AVv5fwoQTdFy37JXc8QcyDSy.jpg",
+        },
+        {
+          title: "Lincoln",
+          id: 72976,
+          poster_path: "/oosQMP9sh9LF2xR2eKcQ1iSscWM.jpg",
+        },
+        {
+          title: "High School Musical",
+          id: 10947,
+          poster_path: "/1DGmWZjUJPeKGFRHGCA6VPFUBML.jpg",
+        },
+        {
+          title: "The Greatest Showman",
+          id: 316029,
+          poster_path: "/b9CeobiihCx1uG1tpw8hXmpi7nm.jpg",
+        },
+        {
+          title: "Airplane!",
+          id: 813,
+          poster_path: "/hiURvJjCgk0s10urHVCg80TFF11.jpg",
+        },
+        {
+          title: "Get Out",
+          id: 419430,
+          poster_path: "/tFXcEccSQMf3lfhfXKSU9iRBpa3.jpg",
+        },
+        {
+          title: "Anchorman: The Legend of Ron Burgundy",
+          id: 8699,
+          poster_path: "/9rQceSyOxJpOVsJRhkgoxNqbkvA.jpg",
+        },
+        {
+          title: "Boomerang",
+          id: 11066,
+          poster_path: "/cc9YAZq5NXiIEJsHjW7p2FaHQkp.jpg",
+        },
+        {
+          title: "Rush Hour",
+          id: 2109,
+          poster_path: "/5LM4sJ2SYTvo6q3sOdYaL7Ly3uj.jpg",
+        },
+        {
+          title: "Knocked Up",
+          id: 4964,
+          poster_path: "/b4OaXw2MW97VvIiZE0Sbn1NfxSh.jpg",
         },
       ],
       shuffledChallenge: [],
@@ -516,7 +616,7 @@ class App extends Component {
   calculateNewGoal() {
     this.randomChallenge();
     this.giphyQuery(this.state.movieChallengeTwo.title);
-    //this.setState({ winnerFlag: true });
+    // this.setState({ winnerFlag: true });
   }
 
   randomChallenge() {
@@ -772,6 +872,7 @@ class App extends Component {
           <button id="playbutton" onClick={() => this.calculateNewGoal()}>
             New Mission
           </button>
+          <div></div>
         </div>
       </div>
     );
@@ -960,7 +1061,7 @@ class App extends Component {
 
     const training = (
       <div>
-        <div id="titleSection">Movie Chain Game</div>
+        <div id="titleSection">Movie Game</div>
         {movieChallengeOne.title !== undefined ? goalLocation : null}
         {movieChainz}
         {superSteps == 3 && instructionFlag ? additionalInstruction : null}
@@ -979,21 +1080,32 @@ class App extends Component {
     );
 
     const celebration = (
-      <div>
-        <div class="instruction" class>
-          <h1>WOW YOU WON THE GAME ! ! !</h1>
-          <h2>Look at your beautiful movie chain</h2>
-          <div>{posters}</div>
+      <div class="instruction" class>
+        <h1>WOW YOU WON THE GAME ! ! !</h1>
+        <h2>Look at your beautiful movie chain</h2>
+        <div>{posters}</div>
+        <div>
+          <iframe
+            src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.moviegame.fun%2F&layout=button&size=large&appId=250140228367248&width=77&height=28"
+            width="77"
+            height="28"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
         </div>
 
-        <iframe
-          src={queryGiphy[0].embed_url}
-          width="auto"
-          height="auto"
-          frameBorder="0"
-          class="giphy-embed"
-          allowFullScreen
-        ></iframe>
+        <div id="padder">
+          <iframe
+            src={queryGiphy[0].embed_url}
+            width="auto"
+            height="auto"
+            frameBorder="0"
+            class="giphy-embed"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
     );
     // {this.state.randomCelebration[1]}

@@ -7,6 +7,11 @@ body {
   margin: 100px;
 }
 
+#padder {
+  margin: 10px;
+  padding: 10px;
+}
+
 #scoreSection {
   font-size: 25px;
 }
@@ -186,6 +191,11 @@ body {
     margin: 25px;
     border-width: 10px;
     border-color: yellow;
+  }
+
+  #padder {
+    margin: 10px;
+    padding: 10px;
   }
 
   .instruction {

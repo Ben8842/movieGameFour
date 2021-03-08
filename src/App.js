@@ -768,6 +768,39 @@ class App extends Component {
     // console.log(this.state.actorQuery);
   }
 
+  backChoice() {
+    console.log("hello back");
+    if (this.state.superSteps == 3) {
+      this.setState({
+        movieChain: this.state.movieChain.slice(
+          0,
+          this.state.movieChain.length - 1
+        ),
+        superSteps: 4,
+      });
+    } else if (this.state.superSteps == 4) {
+      this.setState({
+        movieChain: this.state.movieChain.slice(
+          0,
+          this.state.movieChain.length - 1
+        ),
+        superSteps: 3,
+      });
+    }
+  }
+
+  homeChoice() {
+    console.log("hello home");
+    this.setState({
+      superSteps: 0,
+      startChallengeCount: 0,
+      loserFlag: false,
+      winnerFlag: false,
+      tempCast: [],
+      movieChain: [],
+    });
+  }
+
   render() {
     var {
       superSteps,
@@ -815,7 +848,7 @@ class App extends Component {
 
     const stepZero = (
       <div id="instructionSection">
-        Your beginning movie is: {movieChallengeOne.title}
+        Your beginning movie is: <h3>{movieChallengeOne.title}</h3>
         <div>
           <button id="playbutton" onClick={() => this.incrementSpecial()}>
             Play!
@@ -942,7 +975,14 @@ class App extends Component {
 
     const goalLocation = (
       <div id="scoreSection">
-        Your goal is to reach the movie: {movieChallengeTwo.title}
+        Your goal is to reach the movie: <h3>{movieChallengeTwo.title}</h3>
+      </div>
+    );
+
+    const goalLocation2 = (
+      <div class="focus">
+        Your goal is to reach the movie:{" "}
+        <h3 class="focus">{movieChallengeTwo.title}</h3>
       </div>
     );
 
@@ -1013,10 +1053,32 @@ class App extends Component {
       </div>
     );
 
+    const backButton = (
+      <span>
+        <button id="home" onClick={() => this.backChoice()}>
+          Back
+        </button>
+      </span>
+    );
+
+    const homeButton = (
+      <span>
+        <button id="home" onClick={() => this.homeChoice()}>
+          Home
+        </button>
+      </span>
+    );
+
     const training = (
       <div>
-        <div id="titleSection">Movie Game</div>
-        {movieChallengeOne.title !== undefined ? goalLocation : null}
+        {movieChain.length > 1 ? backButton : null}
+        &nbsp;&nbsp;&nbsp;<span id="titleSection">Movie Game</span>
+        &nbsp;&nbsp; &nbsp;
+        {superSteps > 1 ? homeButton : null}
+        {superSteps == 0 ? goalLocation : null}
+        {movieChallengeOne.title !== undefined && superSteps > 1
+          ? goalLocation2
+          : null}
         {movieChainz}
         {superSteps == 3 && instructionFlag ? additionalInstruction : null}
         {superSteps == 0

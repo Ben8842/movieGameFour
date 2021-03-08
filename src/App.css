@@ -7,6 +7,16 @@ body {
   margin: 100px;
 }
 
+#home {
+  font-size: 16px;
+  border-radius: 80px;
+  color: white;
+  background-color: black;
+  border-width: 10px;
+  border-color: yellow;
+  border: solid;
+}
+
 #padder {
   margin: 10px;
   padding: 10px;
@@ -14,6 +24,7 @@ body {
 
 #scoreSection {
   font-size: 25px;
+  min-height: 2em;
 }
 
 #scoreValue {
@@ -204,5 +215,38 @@ body {
 
   .instruction {
     margin-top: 40px;
+  }
+
+  #scoreSection {
+    font-size: 20px;
+    min-height: 2em;
+  }
+
+  #instructionSection {
+    font-size: 18px;
+    min-height: 2em;
+  }
+
+  h3 {
+    min-height: 3em;
+  }
+
+  .focus {
+    font-size: 20px;
+    min-height: 1em;
+  }
+
+  #home {
+    font-size: 12px;
+    border-radius: 80px;
+    color: yellow;
+    background-color: black;
+    border-width: 6px;
+    border-color: yellow;
+    border: solid;
+  }
+
+  #titleSection {
+    font-size: 30px;
   }
 }

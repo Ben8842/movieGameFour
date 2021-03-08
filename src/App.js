@@ -205,7 +205,7 @@ class App extends Component {
         },
         {
           title: "Jerry Maguire",
-          id: 45317,
+          id: 9390,
           poster_path: "/2FJFChUeEgYpCvsLfAMXjcFtFOy.jpg",
         },
         {
@@ -517,6 +517,46 @@ class App extends Component {
           title: "Knocked Up",
           id: 4964,
           poster_path: "/b4OaXw2MW97VvIiZE0Sbn1NfxSh.jpg",
+        },
+        {
+          title: "The Shining",
+          id: 694,
+          poster_path: "/nRj5511mZdTl4saWEPoj9QroTIu.jpg",
+        },
+        {
+          title: "Jacob's Ladder",
+          id: 2291,
+          poster_path: "/wTHHuGAlSRNStTHEeObYT82qRsN.jpg",
+        },
+        {
+          title: "American Hustle",
+          id: 168672,
+          poster_path: "/z6O1KDhfWDTm5ZBr6Ovr0eg8LqO.jpg",
+        },
+        {
+          title: "Wayne's World",
+          id: 8872,
+          poster_path: "/rsgklbt5KxeuUuchehnLACxzisP.jpg",
+        },
+        {
+          title: "Liar Liar",
+          id: 1624,
+          poster_path: "/p1habYSdC7oD3WygQ5lynU5G5rV.jpg",
+        },
+        {
+          title: "Booksmart",
+          id: 505600,
+          poster_path: "/micaVOa1UZsdzs4fKGA67ZMGOzc.jpg",
+        },
+        {
+          title: "Deadpool",
+          id: 293660,
+          poster_path: "/yGSxMiF0cYuAiyuve5DA6bnWEOI.jpg",
+        },
+        {
+          title: "The Cable Guy",
+          id: 9894,
+          poster_path: "/5cZySBvy41eHTD5LyQn48aP444k.jpg",
         },
       ],
       shuffledChallenge: [],

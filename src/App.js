@@ -652,7 +652,8 @@ class App extends Component {
   calculateNewGoal() {
     this.randomChallenge();
     this.giphyQuery(this.state.movieChallengeTwo.title);
-    this.setState({ winnerFlag: true });
+    console.log(this.state.winnerFlag);
+    //this.setState({ winnerFlag: true });
   }
 
   randomChallenge() {

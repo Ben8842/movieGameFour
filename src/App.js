@@ -624,7 +624,11 @@ class App extends Component {
           ></iframe>
         </span>,
       ],
-      queryGiphy: [{ bitly_gif_url: null }, { bitly_gif_url: null }],
+      queryGiphy: [
+        { bitly_gif_url: null },
+        { bitly_gif_url: null },
+        { bitly_gif_url: null },
+      ],
       randomCelebration: [],
     };
 
@@ -652,7 +656,7 @@ class App extends Component {
   calculateNewGoal() {
     this.randomChallenge();
     this.giphyQuery(this.state.movieChallengeTwo.title);
-    console.log(this.state.winnerFlag);
+    //console.log(this.state.winnerFlag);
     //this.setState({ winnerFlag: true });
   }
 
@@ -1138,7 +1142,11 @@ class App extends Component {
 
     const celebration = (
       <div class="instruction" class>
+        <button id="home" onClick={() => this.homeChoice()}>
+          Play Again
+        </button>
         <h1>WOW YOU WON THE GAME ! ! !</h1>
+
         <h2>Look at your beautiful movie chain</h2>
         <div>{posters}</div>
         <div>
@@ -1156,6 +1164,22 @@ class App extends Component {
         <div id="padder">
           <iframe
             src={queryGiphy[0].embed_url}
+            width="auto"
+            height="auto"
+            frameBorder="0"
+            class="giphy-embed"
+            allowFullScreen
+          ></iframe>
+          <iframe
+            src={queryGiphy[1].embed_url}
+            width="auto"
+            height="auto"
+            frameBorder="0"
+            class="giphy-embed"
+            allowFullScreen
+          ></iframe>
+          <iframe
+            src={queryGiphy[2].embed_url}
             width="auto"
             height="auto"
             frameBorder="0"
